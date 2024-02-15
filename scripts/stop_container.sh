@@ -5,4 +5,8 @@ set -e
 #sudo docker rm -f $(sudo docker ps -a -q)
 #sudo docker rmi $(docker images -f "dangling=true" -q)
 containerid="$(sudo docker ps -q)
-sudo docker rm -f "$containerid"
+if [ -n "$containerid" ]; then
+    sudo docker rm -f "$containerid"
+else
+    echo "No container running"
+fi
