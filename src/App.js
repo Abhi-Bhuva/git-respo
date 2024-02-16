@@ -15,7 +15,7 @@ function App() {
           target="_blank" 
           rel="noopener noreferrer"
         >
-        React-js update fully  done
+        React-js
         </a>
       </header>
     </div>
