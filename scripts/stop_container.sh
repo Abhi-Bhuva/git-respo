@@ -7,6 +7,6 @@ set -e
 #containerid="$(sudo docker ps -q)"
 #sudo docker rm -f "$containerid"
 #containerid='docker ps | awk -F " " '{ print $1}'
-#containerid='docker ps -q '
-#docker rm -f $containerid
+containerid='docker ps -q '
+docker rm -f $containerid
 
